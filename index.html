@@ -3,124 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vendé más. Trabajá menos.</title>
+  <title>Servicios de Agentes IA en n8n</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      line-height: 1.6;
+      padding: 0;
+      background: #f5f5f5;
       color: #333;
     }
     header {
-      background: linear-gradient(135deg, #0077ff, #00c6ff);
+      background: linear-gradient(90deg, #ff5722, #ff9800);
       color: white;
-      padding: 60px 20px;
       text-align: center;
+      padding: 2rem 1rem;
     }
     header h1 {
+      margin: 0;
       font-size: 2.5rem;
-      margin-bottom: 10px;
     }
-    header p {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-    }
-    .btn {
-      background: #ff9800;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background: #e68900;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
+    .container {
+      width: 90%;
+      max-width: 1100px;
       margin: auto;
+      padding: 2rem 0;
     }
-    .problems, .services {
+    .intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .intro h2 {
+      color: #ff5722;
+      font-size: 2rem;
+    }
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
     }
     .card {
-      background: #f9f9f9;
+      background: white;
       border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: transform 0.2s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
     }
     .card:hover {
       transform: translateY(-5px);
     }
-    .card h3 {
-      margin-top: 10px;
-      color: #0077ff;
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
     }
-    .cta {
+    .card-content {
+      padding: 1rem;
       text-align: center;
-      background: #0077ff;
-      color: white;
-      padding: 50px 20px;
-      border-radius: 12px;
     }
-    .cta h2 {
-      margin-bottom: 20px;
+    .card-content h3 {
+      margin: 0.5rem 0;
+      color: #333;
+    }
+    .price {
+      font-size: 1.5rem;
+      color: #ff5722;
+      font-weight: bold;
+      margin: 0.5rem 0;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      background: #ff9800;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #e68900;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Vendé más. Trabajá menos.</h1>
-    <p>Páginas web y automatizaciones inteligentes para que tu negocio esté abierto las 24 horas.</p>
-    <a href="#contacto" class="btn">Quiero aumentar mis ventas</a>
+    <h1>Agentes de IA en n8n</h1>
+    <p>Automatización inteligente para potenciar tu negocio</p>
   </header>
 
-  <section>
-    <h2 style="text-align:center;">Sabemos que manejar un negocio no es fácil</h2>
-    <div class="problems">
-      <div class="card">📦 Te escriben clientes por todos lados y se te pierden pedidos.</div>
-      <div class="card">⏳ Perdés tiempo en tareas repetitivas.</div>
-      <div class="card">💰 Querés vender más, pero no sabes por dónde empezar.</div>
-    </div>
-  </section>
+  <div class="container">
+    <section class="intro">
+      <h2>¿Qué son los agentes de IA?</h2>
+      <p>
+        Los agentes de IA en <strong>n8n</strong> son flujos automatizados que combinan inteligencia artificial con procesos de negocio.
+        Te permiten crear asistentes virtuales, bots inteligentes y sistemas que trabajan 24/7 por vos.
+      </p>
+    </section>
 
-  <section>
-    <h2 style="text-align:center;">Nuestros servicios</h2>
-    <div class="services">
+    <section class="grid">
       <div class="card">
-        🌍
-        <h3>Página web profesional</h3>
-        <p>Tu negocio disponible las 24 horas para recibir pedidos, reservas y consultas.</p>
+        <img src="https://source.unsplash.com/600x400/?ai,robot" alt="Agente IA básico">
+        <div class="card-content">
+          <h3>Agente IA Básico</h3>
+          <p>Automatización simple con un asistente de IA conectado a tu negocio.</p>
+          <p class="price">USD 200</p>
+          <a href="#" class="btn">Contratar</a>
+        </div>
       </div>
       <div class="card">
-        ⚡
-        <h3>Automatización de pedidos</h3>
-        <p>Los pedidos llegan directo a tu WhatsApp o email, sin perder tiempo.</p>
+        <img src="https://source.unsplash.com/600x400/?automation,tech" alt="Agente IA Avanzado">
+        <div class="card-content">
+          <h3>Agente IA Avanzado</h3>
+          <p>Conexión entre múltiples apps, IA y flujos personalizados.</p>
+          <p class="price">USD 500</p>
+          <a href="#" class="btn">Contratar</a>
+        </div>
       </div>
       <div class="card">
-        📊
-        <h3>Control de clientes y ventas</h3>
-        <p>Base de datos automática para que sepas quién te compra y cuánto.</p>
+        <img src="https://source.unsplash.com/600x400/?business,team" alt="Página completa con agentes IA">
+        <div class="card-content">
+          <h3>Página Completa + IA</h3>
+          <p>Tu web profesional integrada con agentes de IA para atender clientes y generar ventas.</p>
+          <p class="price">USD 1000</p>
+          <a href="#" class="btn">Contratar</a>
+        </div>
       </div>
-      <div class="card">
-        📢
-        <h3>Marketing automático</h3>
-        <p>Recordatorios y mensajes automáticos para que vuelvan a comprarte.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta" id="contacto">
-    <h2>¿Listo para vender más y trabajar menos?</h2>
-    <a href="https://wa.me/549XXXXXXXXX" class="btn">Hablá con nosotros en WhatsApp</a>
-  </section>
-
+    </section>
+  </div>
 </body>
 </html>
