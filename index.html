@@ -3,132 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servicios de Agentes IA en n8n</title>
+  <title>Servicios Digitales</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      background: #f4f8fb;
+      color: #333;
       margin: 0;
       padding: 0;
-      background: #f5f5f5;
-      color: #333;
     }
     header {
-      background: linear-gradient(90deg, #ff5722, #ff9800);
+      background: linear-gradient(135deg, #0077ff, #00c896);
       color: white;
+      padding: 20px;
       text-align: center;
-      padding: 2rem 1rem;
     }
-    header h1 {
+    h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
     }
-    .container {
-      width: 90%;
-      max-width: 1100px;
-      margin: auto;
-      padding: 2rem 0;
-    }
-    .intro {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .intro h2 {
-      color: #ff5722;
-      font-size: 2rem;
-    }
-    .grid {
+    .contenedor {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 30px;
     }
     .card {
       background: white;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      overflow: hidden;
-      transition: transform 0.3s;
+      padding: 20px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
     }
     .card:hover {
       transform: translateY(-5px);
     }
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
+    .card h2 {
+      color: #0077ff;
+      margin-bottom: 10px;
     }
-    .card-content {
-      padding: 1rem;
-      text-align: center;
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
     }
-    .card-content h3 {
-      margin: 0.5rem 0;
-      color: #333;
-    }
-    .price {
-      font-size: 1.5rem;
-      color: #ff5722;
+    .precio {
+      font-size: 1.3rem;
       font-weight: bold;
-      margin: 0.5rem 0;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 0.5rem;
-      padding: 0.6rem 1.2rem;
-      background: #ff9800;
-      color: white;
-      border-radius: 6px;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-    .btn:hover {
-      background: #e68900;
+      color: #00a67e;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Agentes de IA en n8n</h1>
-    <p>Automatización inteligente para potenciar tu negocio</p>
+    <h1>💻 Servicios Web & 🤖 Agentes de IA</h1>
+    <p>Soluciones digitales a medida para tu negocio</p>
   </header>
 
-  <div class="container">
-    <section class="intro">
-      <h2>¿Qué son los agentes de IA?</h2>
-      <p>
-        Los agentes de IA en <strong>n8n</strong> son flujos automatizados que combinan inteligencia artificial con procesos de negocio.
-        Te permiten crear asistentes virtuales, bots inteligentes y sistemas que trabajan 24/7 por vos.
-      </p>
-    </section>
+  <section class="contenedor">
+    <!-- Servicios Web -->
+    <div class="card">
+      <h2>🌐 Página Web Básica</h2>
+      <p>Ideal para emprendimientos que necesitan presencia online rápida y profesional.</p>
+      <p class="precio">USD 300</p>
+    </div>
 
-    <section class="grid">
-      <div class="card">
-        <img src="https://source.unsplash.com/600x400/?ai,robot" alt="Agente IA básico">
-        <div class="card-content">
-          <h3>Agente IA Básico</h3>
-          <p>Automatización simple con un asistente de IA conectado a tu negocio.</p>
-          <p class="price">USD 200</p>
-          <a href="#" class="btn">Contratar</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/600x400/?automation,tech" alt="Agente IA Avanzado">
-        <div class="card-content">
-          <h3>Agente IA Avanzado</h3>
-          <p>Conexión entre múltiples apps, IA y flujos personalizados.</p>
-          <p class="price">USD 500</p>
-          <a href="#" class="btn">Contratar</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/600x400/?business,team" alt="Página completa con agentes IA">
-        <div class="card-content">
-          <h3>Página Completa + IA</h3>
-          <p>Tu web profesional integrada con agentes de IA para atender clientes y generar ventas.</p>
-          <p class="price">USD 1000</p>
-          <a href="#" class="btn">Contratar</a>
-        </div>
-      </div>
-    </section>
-  </div>
+    <div class="card">
+      <h2>🛒 Tienda Online</h2>
+      <p>Catálogo de productos, carrito de compras y pasarela de pagos lista para vender.</p>
+      <p class="precio">USD 700</p>
+    </div>
+
+    <div class="card">
+      <h2>⚡ Landing Page Premium</h2>
+      <p>Página optimizada para captar clientes, con diseño atractivo y SEO básico incluido.</p>
+      <p class="precio">USD 500</p>
+    </div>
+
+    <!-- Agentes de IA -->
+    <div class="card">
+      <h2>🤖 Agente de IA Básico</h2>
+      <p>Asistente para responder preguntas frecuentes o dar soporte simple a tus clientes.</p>
+      <p class="precio">USD 200</p>
+    </div>
+
+    <div class="card">
+      <h2>🧠 Agente de IA Avanzado</h2>
+      <p>IA personalizada con memoria y respuestas inteligentes entrenada para tu negocio.</p>
+      <p class="precio">USD 600</p>
+    </div>
+
+    <div class="card">
+      <h2>👨‍💻 Equipo de Agentes IA</h2>
+      <p>Varios agentes conectados entre sí para cubrir programación, marketing y soporte.</p>
+      <p class="precio">USD 1,200</p>
+    </div>
+  </section>
 </body>
 </html>
