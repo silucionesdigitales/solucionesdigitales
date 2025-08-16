@@ -1,79 +1,126 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soluciones Digitales para Comercios</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendé más. Trabajá menos.</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #0077ff, #00c6ff);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .btn {
+      background: #ff9800;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #e68900;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .problems, .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin-top: 10px;
+      color: #0077ff;
+    }
+    .cta {
+      text-align: center;
+      background: #0077ff;
+      color: white;
+      padding: 50px 20px;
+      border-radius: 12px;
+    }
+    .cta h2 {
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
-    <header class="hero">
-        <h1>Vendé más. Trabajá menos.</h1>
-        <p>Páginas web y automatizaciones inteligentes para que tu negocio esté abierto las 24 horas.</p>
-        <a href="https://wa.me/5491112345678" class="btn">Quiero aumentar mis ventas</a>
-    </header>
 
-    <section class="problemas">
-        <h2>Sabemos que manejar un negocio no es fácil</h2>
-        <ul>
-            <li>📦 Te escriben clientes por todos lados y se te pierden pedidos.</li>
-            <li>⏳ Perdés tiempo en tareas repetitivas.</li>
-            <li>💰 Querés vender más, pero no sabes por dónde empezar.</li>
-        </ul>
-        <p>Te damos las herramientas para que todo funcione en automático.</p>
-    </section>
+  <header>
+    <h1>Vendé más. Trabajá menos.</h1>
+    <p>Páginas web y automatizaciones inteligentes para que tu negocio esté abierto las 24 horas.</p>
+    <a href="#contacto" class="btn">Quiero aumentar mis ventas</a>
+  </header>
 
-    <section class="servicios">
-        <h2>Nuestros servicios</h2>
-        <div class="service-card">
-            <h3>🌍 Página web profesional</h3>
-            <p>Tu negocio disponible las 24 horas para recibir pedidos, reservas y consultas.</p>
-        </div>
-        <div class="service-card">
-            <h3>⚡ Automatización de pedidos</h3>
-            <p>Los pedidos llegan directo a tu WhatsApp o email, sin perder tiempo.</p>
-        </div>
-        <div class="service-card">
-            <h3>📊 Control de clientes y ventas</h3>
-            <p>Base de datos automática para que sepas quién te compra y cuánto.</p>
-        </div>
-        <div class="service-card">
-            <h3>📢 Marketing automático</h3>
-            <p>Recordatorios y mensajes automáticos para que vuelvan a comprarte.</p>
-        </div>
-    </section>
+  <section>
+    <h2 style="text-align:center;">Sabemos que manejar un negocio no es fácil</h2>
+    <div class="problems">
+      <div class="card">📦 Te escriben clientes por todos lados y se te pierden pedidos.</div>
+      <div class="card">⏳ Perdés tiempo en tareas repetitivas.</div>
+      <div class="card">💰 Querés vender más, pero no sabes por dónde empezar.</div>
+    </div>
+  </section>
 
-    <section class="precios">
-        <h2>Planes y precios</h2>
-        <table>
-            <tr>
-                <th>Plan</th>
-                <th>Incluye</th>
-                <th>Precio (USD)</th>
-            </tr>
-            <tr>
-                <td>Básico</td>
-                <td>Página simple + automatización mínima (pedidos → WhatsApp)</td>
-                <td>150</td>
-            </tr>
-            <tr>
-                <td>Intermedio</td>
-                <td>Página con catálogo + automatizaciones de pedidos y base de clientes</td>
-                <td>300</td>
-            </tr>
-            <tr>
-                <td>Premium</td>
-                <td>Página e-commerce + automatizaciones de marketing, control de stock y reportes</td>
-                <td>700</td>
-            </tr>
-        </table>
-        <p><i>Plan mensual de mantenimiento desde USD 30.</i></p>
-    </section>
+  <section>
+    <h2 style="text-align:center;">Nuestros servicios</h2>
+    <div class="services">
+      <div class="card">
+        🌍
+        <h3>Página web profesional</h3>
+        <p>Tu negocio disponible las 24 horas para recibir pedidos, reservas y consultas.</p>
+      </div>
+      <div class="card">
+        ⚡
+        <h3>Automatización de pedidos</h3>
+        <p>Los pedidos llegan directo a tu WhatsApp o email, sin perder tiempo.</p>
+      </div>
+      <div class="card">
+        📊
+        <h3>Control de clientes y ventas</h3>
+        <p>Base de datos automática para que sepas quién te compra y cuánto.</p>
+      </div>
+      <div class="card">
+        📢
+        <h3>Marketing automático</h3>
+        <p>Recordatorios y mensajes automáticos para que vuelvan a comprarte.</p>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>Empezá hoy y dejá que la tecnología trabaje por vos.</p>
-        <a href="https://wa.me/5491112345678" class="btn">Hablar ahora por WhatsApp</a>
-    </footer>
+  <section class="cta" id="contacto">
+    <h2>¿Listo para vender más y trabajar menos?</h2>
+    <a href="https://wa.me/549XXXXXXXXX" class="btn">Hablá con nosotros en WhatsApp</a>
+  </section>
+
 </body>
 </html>
