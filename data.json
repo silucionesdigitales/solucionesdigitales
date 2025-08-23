@@ -1,0 +1,40 @@
+{
+  "categorias": [
+    "Bater\u00edas",
+    "Cargadores",
+    "M\u00f3dulos",
+    "Placas de Carga",
+    "Tapas Traseras"
+  ],
+  "productos": [
+    {
+      "nombre": "Bater\u00eda 3000mAh",
+      "descripcion": "Alta duraci\u00f3n",
+      "precio": 2500,
+      "categoria": "Bater\u00edas",
+      "imagen": "assets/placeholder.png"
+    },
+    {
+      "nombre": "Cargador 12V",
+      "descripcion": "Carga r\u00e1pida",
+      "precio": 1800,
+      "categoria": "Cargadores",
+      "imagen": "assets/placeholder.png"
+    },
+    {
+      "nombre": "M\u00f3dulo WiFi",
+      "descripcion": "ESP8266",
+      "precio": 900,
+      "categoria": "M\u00f3dulos",
+      "imagen": "assets/placeholder.png"
+    }
+  ],
+  "banners": [],
+  "redes": {
+    "facebook": "",
+    "instagram": "",
+    "tiktok": "",
+    "youtube": "",
+    "whatsapp": ""
+  }
+}
