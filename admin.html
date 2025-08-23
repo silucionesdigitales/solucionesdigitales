@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Tienda</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="admin.js"></script>
+</head>
+<body>
+  <header><h1>Panel de Administración</h1></header>
+
+  <main>
+    <section>
+      <h2>Gestión de Productos</h2>
+      <form id="form-producto">
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="text" id="descripcion" placeholder="Descripción" required>
+        <input type="number" id="precio" placeholder="Precio" required>
+        <select id="categoria" required></select>
+        <input type="text" id="imagen" placeholder="URL Imagen" required>
+        <button type="submit">Agregar Producto</button>
+      </form>
+      <div id="lista-productos"></div>
+    </section>
+
+    <section>
+      <h2>Categorías</h2>
+      <form id="form-categoria">
+        <input type="text" id="nueva-categoria" placeholder="Nueva Categoría">
+        <button type="submit">Agregar Categoría</button>
+      </form>
+      <ul id="lista-categorias"></ul>
+    </section>
+
+    <section>
+      <h2>Banners</h2>
+      <form id="form-banner">
+        <input type="text" id="banner-url" placeholder="URL Imagen">
+        <button type="submit">Agregar Banner</button>
+      </form>
+      <div id="lista-banners"></div>
+    </section>
+
+    <section>
+      <h2>Redes Sociales</h2>
+      <form id="form-redes">
+        <input type="url" id="facebook" placeholder="Facebook URL">
+        <input type="url" id="instagram" placeholder="Instagram URL">
+        <input type="url" id="tiktok" placeholder="TikTok URL">
+        <input type="url" id="youtube" placeholder="YouTube URL">
+        <input type="text" id="whatsapp" placeholder="Número WhatsApp">
+        <button type="submit">Guardar Redes</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
